@@ -41,10 +41,11 @@ const styles = StyleSheet.create({
 });
 
 const Menu = () => {
+	const newBrand = [...BRANDS, 'About']
 	return (
 		<div>
 			<ul className={css(styles.ul)}>
-				{BRANDS.map((brand) => (
+				{newBrand.map((brand) => (
 					<li className={css(styles.li)} key={brand}>
 						<ALink label={brand} to={`/${brand}`} styles={styles} />
 					</li>

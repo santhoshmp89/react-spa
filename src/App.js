@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Menu from "./Components/Menu";
 import Brand from "./Components/Brand";
 import Error from "./Components/Error";
+import About from "./Components/About";
 
 function App() {
   return (
@@ -10,13 +11,16 @@ function App() {
       <Router>
         <Menu />
         <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/">Please select brand...</Route>
           <Route path="/error">
             <Error />
           </Route>
           <Route path="/:brand">
             <Brand />
           </Route>
-          <Route path="/">Please select brand...</Route>
         </Switch>
       </Router>
     </div>
