@@ -17,14 +17,14 @@ const About = () => {
 		<div class="col-md-6 align-self-center">
 			<Helmet>
 				<title>About</title>
-				{/* <script language="javascript" type="text/javascript">
+				<script language="javascript" type="text/javascript">
 					{`
 						function init() {
 							window.RProfiler.excludeBenchMarks();
 						}
 						window.RProfiler ? init() : window.addEventListener("GlimpseLoaded", init);
 					`}
-				</script> */}
+				</script>
 			</Helmet>
 			<h1 className={css(styles.h1)}>About</h1>
 			<h2 className={css(styles.h2)}>About Us</h2>
