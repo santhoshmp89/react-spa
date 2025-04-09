@@ -16,7 +16,7 @@ const About = () => {
 	return (
 		<div class="col-md-6 align-self-center">
 			<Helmet>
-				<title>About</title>
+				<title>About 1</title>
 				{/* <script language="javascript" type="text/javascript">
 					{`
 						function init() {
