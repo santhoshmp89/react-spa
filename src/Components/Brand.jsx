@@ -28,7 +28,7 @@ const Brand = () => {
 		<Fragment>
 			<Helmet>
 				<title>{brand}</title>
-				<script language="javascript" type="text/javascript">
+				{/* <script language="javascript" type="text/javascript">
 					{`
 						function init() {
 							window.RProfiler.excludeBenchMarks();
@@ -46,7 +46,7 @@ const Brand = () => {
 						cpInit('consentv2', { analytics_storage: 'denied' });
 
 					`}
-				</script>
+				</script> */}
 
 			</Helmet>
 			<h1 className={css(styles.h1)}>{brand}</h1>
