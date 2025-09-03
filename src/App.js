@@ -4,19 +4,25 @@ import Menu from "./Components/Menu";
 import Brand from "./Components/Brand";
 import Error from "./Components/Error";
 import About from "./Components/About";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/react-spa">
         <Menu />
         <Switch>
-          <Route path="/about">
+          <Route exact path="/about">
             <About />
           </Route>
-          <Route path="/">Please select brand...</Route>
-          <Route path="/error">
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/error">
             <Error />
+          </Route>
+          <Route exact path="/">
+            Please select brand...
           </Route>
           <Route path="/:brand">
             <Brand />

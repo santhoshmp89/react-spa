@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { StyleSheet, css } from "aphrodite/no-important";
 import { useParams, useRouteMatch, Switch, Route } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import Model from "./Model";
 import SubMenu from "./SubMenu";
@@ -25,6 +26,29 @@ const Brand = () => {
 	const { url } = useRouteMatch();
 	return (
 		<Fragment>
+			<Helmet>
+				<title>{brand}</title>
+				<script language="javascript" type="text/javascript">
+					{`
+						function init() {
+							window.RProfiler.excludeBenchMarks();
+						}
+						window.RProfiler ? init() : window.addEventListener("GlimpseLoaded", init);
+
+						function cpInit(command, options) {
+						if (window.CPRUM) {
+							window.CPRUM(command, options);
+						} else {
+							window.addEventListener('GlimpseLoaded', () => window.CPRUM(command, options));
+						}
+						}
+
+						cpInit('consentv2', { analytics_storage: 'denied' });
+
+					`}
+				</script>
+
+			</Helmet>
 			<h1 className={css(styles.h1)}>{brand}</h1>
 			<div className={css(styles.conatiner)}>
 				<SubMenu />

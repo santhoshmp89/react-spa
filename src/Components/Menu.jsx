@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 });
 
 const Menu = () => {
-	const newBrand = [...BRANDS, 'About']
+	const newBrand = [...BRANDS, 'About', 'Contact']
 	return (
 		<div>
 			<ul className={css(styles.ul)}>

@@ -12,11 +12,11 @@ const styles = StyleSheet.create({
 		fontWeight: "bold",
 	},
 });
-const About = () => {
+const Contact = () => {
 	return (
 		<div class="col-md-6 align-self-center">
 			<Helmet>
-				<title>About 1</title>
+				<title>Contact</title>
 				<script language="javascript" type="text/javascript">
 					{`
 						function init() {
@@ -38,8 +38,8 @@ const About = () => {
 				</script>
 
 			</Helmet>
-			<h1 className={css(styles.h1)}>About</h1>
-			<h2 className={css(styles.h2)}>About Us</h2>
+			<h1 className={css(styles.h1)}>Contact</h1>
+			<h2 className={css(styles.h2)}>Contact Us</h2>
 			<p>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit unde
 				nemo cum veniam esse non accusamus a aliquid. Maiores possimus nam
@@ -54,4 +54,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default Contact;
